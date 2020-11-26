@@ -10,7 +10,7 @@ function Product() {
       
 
       {/* First Item */}
-      <Text style={styles.text}>Checkout our latest merchandise</Text>
+      <Text style={styles.text}>47cozy</Text>
       <Image source={require('../img/47cozy.png')} style={styles.img}/>
       <Button 
         onPress={() => Alert.alert("Button Pressed")}
@@ -20,15 +20,15 @@ function Product() {
       
 
       {/* Second Item */}
-      {/* <Text style={styles.text}>Checkout our latest merchandise</Text>
-      <Image source={require('./assets/tie dye.png')} style={styles.img2}/> */}
+      <Text style={styles.text}>Checkout our latest merchandise</Text>
+      <Image source={require('../img/tie dye.png')} style={styles.img2}/>
       
 
     </View>
 
 
 
-);
+    );
 };
 
 const styles= StyleSheet.create({
@@ -36,6 +36,7 @@ const styles= StyleSheet.create({
     flex:1,
     justifyContent:'center',
     alignItems: 'center',
+    
   },
   text: {
     color: "darkslateblue",
@@ -45,10 +46,10 @@ const styles= StyleSheet.create({
     height:200,
     width:200,
   },
-  // img2:{
-  //     height:200,
-  //     width:200,
-  //   }
+  img2:{
+      height:200,
+      width:200,
+    }
   
 });
 
