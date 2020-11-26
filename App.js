@@ -45,10 +45,10 @@ const styles= StyleSheet.create({
     height:200,
     width:200,
   },
-  // img2:{
-  //     height:200,
-  //     width:200,
-  //   }
+  img2:{
+      height:200,
+      width:200,
+    }
   
 });
 
