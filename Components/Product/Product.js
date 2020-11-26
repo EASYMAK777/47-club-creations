@@ -11,7 +11,7 @@ function Product() {
 
       {/* First Item */}
       <Text style={styles.text}>Checkout our latest merchandise</Text>
-      <Image source={require('./assets/47cozy.png')} style={styles.img}/>
+      <Image source={require('../img/47cozy.png')} style={styles.img}/>
       <Button 
         onPress={() => Alert.alert("Button Pressed")}
         title="Press here to inquire about this product"
