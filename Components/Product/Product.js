@@ -20,9 +20,12 @@ function Product() {
       
 
       {/* Second Item */}
-      <Text style={styles.text}>Checkout our latest merchandise</Text>
+      <Text style={styles.text}>47 Tie Dye</Text>
       <Image source={require('../img/tie dye.png')} style={styles.img2}/>
-      
+      <Button 
+        onPress={() => Alert.alert("Button Pressed")}
+        title="Press here to inquire about this product"
+      />
 
     </View>
 
