@@ -146,7 +146,7 @@ container__Product:{
 },
 
 product__Info:{
-
+    alignItems:"center"
 },
   
 text: {
