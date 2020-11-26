@@ -27,6 +27,14 @@ function Product() {
         title="Press here to inquire about this product"
       />
 
+      {/* 3rd Item */}
+      <Text style={styles.text}>47 White Hoodie</Text>
+      <Image source={require('../img/47hoodies.png')} style={styles.img2}/>
+      <Button 
+        onPress={() => Alert.alert("Button Pressed")}
+        title="Press here to inquire about this product"
+      />
+
     </View>
 
 
