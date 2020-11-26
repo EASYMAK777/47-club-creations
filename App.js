@@ -8,7 +8,7 @@ import Product from './Components/Product/Product';
 const App = () => {
   return (
     <View style={styles.container}>
-      <Header/>
+      <Header title="47 Club Creations"/>
       <Product/>
 
       

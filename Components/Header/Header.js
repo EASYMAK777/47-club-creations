@@ -1,10 +1,10 @@
 import React from 'react'
 import { View, StyleSheet, Text } from 'react-native'
 
-function Header() {
+function Header({title}) {
     return (
         <View style = {styles.header}>
-            <Text style={styles.text}>Checkout our latest designs</Text>
+            <Text style={styles.text}>{title}</Text>
 
         </View>
     );
