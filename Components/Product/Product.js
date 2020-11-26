@@ -92,6 +92,7 @@ const styles= StyleSheet.create({
   text: {
     color: "darkslateblue",
     fontSize: 30,
+    backgroundColor:"white"
   },
   img: {
     height:200,
