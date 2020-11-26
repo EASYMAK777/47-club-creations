@@ -54,7 +54,7 @@ function Product() {
       {/* Item 6 */}
       <Text style={styles.text}>47 Soccer Suit</Text>
       <Image source={require('../img/47soccer suit.png')} style={styles.img2}/>
-      <Button 
+      <Button  
         onPress={() => Alert.alert("Button Pressed")}
         title="Press here to inquire about this product"
       />
@@ -70,10 +70,13 @@ function Product() {
       {/* Item 8 */}
       <Text style={styles.text}>47 Sweat Pants</Text>
       <Image source={require('../img/47sweatpants.png')} style={styles.img2}/>
-      <Button 
+      <Button   
         onPress={() => Alert.alert("Button Pressed")}
         title="Press here to inquire about this product"
-      />
+     />
+      
+        
+
 
     </View>
 
@@ -94,9 +97,12 @@ const styles= StyleSheet.create({
     fontSize: 30,
     backgroundColor:"white",
     margin:10,
-    
-    
+    width:200,
+    textAlign:"center"
   },
+
+    
+    
   img: {
     height:200,
     width:200,
