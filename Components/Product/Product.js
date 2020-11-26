@@ -5,24 +5,42 @@ import { View, Text, StyleSheet, Image, Button, Alert } from 'react-native';
 
 function Product() {
   return (
-    <View style={styles.containerMain}>
+    <View style={styles.container__Main}>
 
       
-        <View style={styles.container1}>
+        <View style={styles.container__Product}>
 
             {/* First Item */}
-            <Image source={require('../img/47cozy.png')} style={styles.img}/>
-            <Text style={styles.text}>47cozy</Text>
-            <Button
-                style={styles.button} 
-                color="darkslateblue"
-                onPress={() => Alert.alert("Button Pressed")}
-                title="Press here to inquire about this product"
-            />
+            <View style={styles.product__Info}>
+                <Image source={require('../img/47cozy.png')} style={styles.img}/>
+                <Text style={styles.text}>47cozy</Text>
+                <Button
+                    style={styles.button} 
+                    color="darkslateblue"
+                    onPress={() => Alert.alert("Button Pressed")}
+                    title="Press here to inquire about this product"
+                />
+
+            </View>
+
+            <View style={styles.product__Info}>
+                <Image source={require('../img/47cozy.png')} style={styles.img}/>
+                <Text style={styles.text}>47cozy</Text>
+                <Button
+                    style={styles.button} 
+                    color="darkslateblue"
+                    onPress={() => Alert.alert("Button Pressed")}
+                    title="Press here to inquire about this product"
+                />
+
+            </View>
+
+            
+
 
         
 
-            {/* Second Item */}
+            {/* Second Item
             <Image source={require('../img/tie dye.png')} style={styles.img}/>
             <Text style={styles.text}>47 Tie Dye</Text>
             <Button 
@@ -30,7 +48,7 @@ function Product() {
                 color="darkslateblue"
                 onPress={() => Alert.alert("Button Pressed")}
                 title="Press here to inquire about this product"
-            />
+            /> */}
         </View>
 
       
@@ -110,11 +128,25 @@ function Product() {
 
 const styles= StyleSheet.create({
     
-containerMain: {
+container__Main: {
     flex:1,
     justifyContent:'center',
     alignItems: 'center',
     
+},
+
+container__Product:{
+    flex:1,
+    justifyContent:"center",
+    alignItems:"center",
+    flexDirection:"row",
+    backgroundColor:"black",
+    marginTop:20
+       
+},
+
+product__Info:{
+
 },
   
 text: {
