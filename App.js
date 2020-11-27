@@ -10,11 +10,12 @@ const App = () => {
     <View style={styles.container}>
       <Header title="47 Club Creations"/>
       <Product/>
-
-      
     </View>
   );
 };
+      
+
+      
 
 const styles= StyleSheet.create({
 

@@ -1,10 +1,15 @@
 import React from 'react'
 import { View, Text, StyleSheet, Image, Button, Alert, ScrollView } from 'react-native';
+import Header from "../Header/Header"
 
       
 function Product() {
   return (
     <ScrollView style={styles.container__Main}>
+        <Header
+             style={styles.subHeader} 
+            title="Home of the latest fashion"
+        />
 
         <View style={styles.container__Product}>
             {/* First Item */}
@@ -77,9 +82,13 @@ const styles= StyleSheet.create({
 
 container__Main: {
     flex:1,
-    
-    
 },
+
+subHeader:{
+
+},
+    
+    
 
 container__Product:{
     display:"flex",
