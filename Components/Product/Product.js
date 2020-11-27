@@ -7,7 +7,7 @@ function Product() {
   return (
     <ScrollView style={styles.container__Main}>
         <Header
-             style={styles.subHeader} 
+            style={styles.subHeader} 
             title="Home of the latest fashion"
         />
 
@@ -24,46 +24,122 @@ function Product() {
                     title="Press here to inquire about this product"
                 />
             </View>
-
-
-
-            {/* Second Item */}
-            <View style={styles.product__Info}>
-                <Image source={require('../img/47cozy.png')} style={styles.product__image}/>
-                <Text style={styles.text}>47cozy</Text>
-                <Button
-                    style={styles.button} 
-                    color="darkslateblue"
-                    onPress={() => Alert.alert("Button Pressed")}
-                    title="Press here to inquire about this product"
-                />
-            </View>
-
-            {/* Second Item */}
-            <View style={styles.product__Info}>
-                <Image source={require('../img/47cozy.png')} style={styles.product__image}/>
-                <Text style={styles.text}>47cozy</Text>
-                <Button
-                    style={styles.button} 
-                    color="darkslateblue"
-                    onPress={() => Alert.alert("Button Pressed")}
-                    title="Press here to inquire about this product"
-                />
-            </View>
-
-            {/* Second Item */}
-            <View style={styles.product__Info}>
-                <Image source={require('../img/47cozy.png')} style={styles.product__image}/>
-                <Text style={styles.text}>47cozy</Text>
-                <Button
-                    style={styles.button} 
-                    color="darkslateblue"
-                    onPress={() => Alert.alert("Button Pressed")}
-                    title="Press here to inquire about this product"
-                />
-            </View>
-            
         </View>
+
+        <View style={styles.container__Product}>
+            {/* First Item */}
+            <View style={styles.product__Info}>
+                <Image source={require('../img/47hoodies.png')} style={styles.product__image}/>
+                <Text style={styles.text}>47 Hoody</Text>
+                <Button
+
+                    style={styles.button} 
+                    color="darkslateblue"
+                    onPress={() => Alert.alert("Button Pressed")}
+                    title="Press here to inquire about this product"
+                />
+            </View>
+        </View>
+
+        <View style={styles.container__Product}>
+            {/* First Item */}
+            <View style={styles.product__Info}>
+                <Image source={require('../img/47SexLounge.png')} style={styles.product__image}/>
+                <Text style={styles.text}>47 Sex Lounge</Text>
+                <Button
+
+                    style={styles.button} 
+                    color="darkslateblue"
+                    onPress={() => Alert.alert("Button Pressed")}
+                    title="Press here to inquire about this product"
+                />
+            </View>
+        </View>
+
+        <View style={styles.container__Product}>
+            {/* First Item */}
+            <View style={styles.product__Info}>
+                <Image source={require('../img/47soccer suit.png')} style={styles.product__image}/>
+                <Text style={styles.text}>47 Soccer Suit</Text>
+                <Button
+
+                    style={styles.button} 
+                    color="darkslateblue"
+                    onPress={() => Alert.alert("Button Pressed")}
+                    title="Press here to inquire about this product"
+                />
+            </View>
+        </View>
+
+        <View style={styles.container__Product}>
+            {/* First Item */}
+            <View style={styles.product__Info}>
+                <Image source={require('../img/47surfhoodies.png')} style={styles.product__image}/>
+                <Text style={styles.text}>47 Surf Hoodie</Text>
+                <Button
+
+                    style={styles.button} 
+                    color="darkslateblue"
+                    onPress={() => Alert.alert("Button Pressed")}
+                    title="Press here to inquire about this product"
+                />
+            </View>
+        </View>
+
+        <View style={styles.container__Product}>
+            {/* First Item */}
+            <View style={styles.product__Info}>
+                <Image source={require('../img/47sweatpants.png')} style={styles.product__image}/>
+                <Text style={styles.text}>47 Sweat Pants</Text>
+                <Button
+
+                    style={styles.button} 
+                    color="darkslateblue"
+                    onPress={() => Alert.alert("Button Pressed")}
+                    title="Press here to inquire about this product"
+                />
+            </View>
+        </View>
+
+        <View style={styles.container__Product}>
+            {/* First Item */}
+            <View style={styles.product__Info}>
+                <Image source={require('../img/47sweatshirt with hoodie pocket.png')} style={styles.product__image}/>
+                <Text style={styles.text}>47 Sweatshirt with Hoodie Pocket</Text>
+                <Button
+
+                    style={styles.button} 
+                    color="darkslateblue"
+                    onPress={() => Alert.alert("Button Pressed")}
+                    title="Press here to inquire about this product"
+                />
+            </View>
+        </View>
+
+        <View style={styles.container__Product}>
+            {/* First Item */}
+            <View style={styles.product__Info}>
+                <Image source={require('../img/champion shorts.png')} style={styles.product__image}/>
+                <Text style={styles.text}>47 Champion Shorts</Text>
+                <Button
+
+                    style={styles.button} 
+                    color="darkslateblue"
+                    onPress={() => Alert.alert("Button Pressed")}
+                    title="Press here to inquire about this product"
+                />
+            </View>
+        </View>
+
+
+
+
+
+
+            
+
+            
+            
 
         
     </ScrollView>
@@ -82,22 +158,24 @@ const styles= StyleSheet.create({
 
 container__Main: {
     flex:1,
-},
-
-subHeader:{
-
-},
     
+    
+},
+
+
     
 
 container__Product:{
-    display:"flex",
-    flex:1,
+    
+    flex:2,
     justifyContent:"center",
     alignItems:"center",
     flexDirection:"column",
     backgroundColor:"black",
     marginTop:10,
+    marginBottom:10,
+    marginLeft:50,
+    marginRight:50
 
     
        
@@ -130,11 +208,7 @@ product__image: {
 },
   
   
-button:{
-    
-      
-}
-  
+
 });
 
 export default Product;

@@ -15,10 +15,11 @@ const styles = StyleSheet.create({
         height:60,
         padding:15,
         backgroundColor:'darkslateblue',
+        borderWidth:1
     },
     text:{
         color:"#fff",
-        fontSize:23,
+        fontSize:30,
         textAlign:"center"
     }
 });
