@@ -24,17 +24,17 @@ export default function Form(){
 
                         <TextInput 
                             style={styles.form__container}
-                            placeholder="Review Title"
+                            placeholder="Review Body"
                             onChangeText={props.handleChange("title")}
-                            value={props.values.title}
+                            value={props.values.body}
                             
                         /> 
 
                         <TextInput 
                             style={styles.form__container}
-                            placeholder="Review Title"
+                            placeholder="Review Rating"
                             onChangeText={props.handleChange("title")}
-                            value={props.values.title}
+                            value={props.values.rating}
                             
                         /> 
                     </View>
