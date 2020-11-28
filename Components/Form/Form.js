@@ -12,7 +12,9 @@ export default function Form(){
                 }}
             >
 
-
+                {()=>(
+                    
+                )}
             </Formik>
         </View>
     )
