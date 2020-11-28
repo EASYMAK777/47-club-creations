@@ -9,6 +9,8 @@ export default function Form(){
                 initialValues={{ title:'', body:'', rating:'' }}
                 onSubmit={(values)=> {
                     values.title
+                    values.body
+                    values.rating
                 }}
             >
 
