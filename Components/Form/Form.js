@@ -19,7 +19,7 @@ export default function Form(){
                 {(props)=> (
                     <View>
                         <TextInput 
-                            style={styles.form__container}
+                            style={styles.input}
                             placeholder="Review Title"
                             onChangeText={props.handleChange("title")}
                             value={props.values.title}
@@ -27,7 +27,7 @@ export default function Form(){
                         /> 
 
                         <TextInput 
-                            style={styles.form__container}
+                            style={styles.input}
                             placeholder="Review Body"
                             onChangeText={props.handleChange("body")}
                             value={props.values.body}
@@ -35,7 +35,7 @@ export default function Form(){
                         /> 
 
                         <TextInput 
-                            style={styles.form__container}
+                            style={styles.input}
                             placeholder="Review Rating"
                             onChangeText={props.handleChange("rating")}
                             value={props.values.rating}
@@ -55,3 +55,12 @@ export default function Form(){
     )
 }
 
+
+const styles = StyleSheet.create({
+    main__container:{
+        flex:1
+    },
+    input:{
+        flex:1
+    }
+})
