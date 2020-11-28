@@ -12,8 +12,14 @@ export default function Form(){
                 }}
             >
 
-                {()=>(
-                    
+                {(props)=> (
+                    <View>
+                        <TextInput 
+                            style={styles.form__container}
+                            placeholder="Review Title"
+                            onChangeText={props.handleChange("title")}
+                        /> 
+                    </View>
                 )}
             </Formik>
         </View>
