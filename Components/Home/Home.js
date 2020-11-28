@@ -1,10 +1,12 @@
 import React from 'react'
 import { View, } from 'react-native'
+import Header from '../Header/Header'
 
 
 function Home() {
     return (
         <View>
+            <Header/>
             <Text styles={style.home__text}>
                 Welcome to 47 Club Creations
             </Text>
