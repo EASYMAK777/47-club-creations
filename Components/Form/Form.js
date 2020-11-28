@@ -1,15 +1,6 @@
-import React from 'react'
-import { View, Text } from 'react-native'
+import React from 'react';
+import { View, Text, StyleSheet, Button, TextInput, } from 'react-native';
+import { Formik } from 'formik';
 
-function Form() {
-    return (
 
-        <View style={styles.main__container}>
-            <Text style={styles.text}>
-                
-            </Text>
-            
-        </View>
-    );
-};
-export default Form;
+
