@@ -7,8 +7,8 @@ export default function Form(){
         <View style={styles.main__container}>
             <Formik
                 initialValues={{ title:'', body:'', rating:'' }}
-                onSubmit={()=> {
-                    
+                onSubmit={(values)=> {
+
                 }}
             >
 
