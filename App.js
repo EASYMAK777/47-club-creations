@@ -2,25 +2,28 @@ import React from 'react'
 import { View, StyleSheet} from 'react-native';
 import Header from './Components/Header/Header';
 import Product from './Components/Product/Product';
+import Modal from './Components/Modal/Modal';
 
 
 
 const App = () => {
   return (
     <View style={styles.container}>
-      <Header/>
+      <Header title="47 Club Creations"/>
       <Product/>
-
-      
     </View>
   );
 };
+      
+
+      
 
 const styles= StyleSheet.create({
 
   container:{
     flex: 1,
     paddingTop:60,
+    backgroundColor:"gray"
   },
 
 });
