@@ -19,6 +19,14 @@ export default function Form(){
                             placeholder="Review Title"
                             onChangeText={props.handleChange("title")}
                             value={props.values.title}
+
+                        /> 
+
+                        <TextInput 
+                            style={styles.form__container}
+                            placeholder="Review Title"
+                            onChangeText={props.handleChange("title")}
+                            value={props.values.title}
                             
                         /> 
                     </View>
