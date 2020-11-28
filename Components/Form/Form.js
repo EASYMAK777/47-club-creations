@@ -8,9 +8,11 @@ export default function Form(){
             <Formik
                 initialValues={{ title:'', body:'', rating:'' }}
                 onSubmit={(values)=> {
-                    values.title
-                    values.body
-                    values.rating
+
+                    console.log(values);
+                    // values.title
+                    // values.body
+                    // values.rating
                 }}
             >
 
@@ -27,7 +29,7 @@ export default function Form(){
                         <TextInput 
                             style={styles.form__container}
                             placeholder="Review Body"
-                            onChangeText={props.handleChange("title")}
+                            onChangeText={props.handleChange("body")}
                             value={props.values.body}
                             
                         /> 
@@ -35,10 +37,17 @@ export default function Form(){
                         <TextInput 
                             style={styles.form__container}
                             placeholder="Review Rating"
-                            onChangeText={props.handleChange("title")}
+                            onChangeText={props.handleChange("rating")}
                             value={props.values.rating}
                             
                         /> 
+
+
+                        <Button
+                            title="Submit"
+                            color="maroon"
+                            onPress={props.handleSubmit}
+                        />
                     </View>
                 )}
             </Formik>
