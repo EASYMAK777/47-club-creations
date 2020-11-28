@@ -8,19 +8,46 @@ export default function Form(){
             <Formik
                 initialValues={{ title:'', body:'', rating:'' }}
                 onSubmit={(values)=> {
-                    values.title
+
+                    console.log(values);
+                    // values.title
+                    // values.body
+                    // values.rating
                 }}
             >
 
                 {(props)=> (
                     <View>
                         <TextInput 
-                            style={styles.form__container}
+                            style={styles.input}
                             placeholder="Review Title"
                             onChangeText={props.handleChange("title")}
                             value={props.values.title}
+
+                        /> 
+
+                        <TextInput 
+                            style={styles.input}
+                            placeholder="Review Body"
+                            onChangeText={props.handleChange("body")}
+                            value={props.values.body}
                             
                         /> 
+
+                        <TextInput 
+                            style={styles.input}
+                            placeholder="Review Rating"
+                            onChangeText={props.handleChange("rating")}
+                            value={props.values.rating}
+                            
+                        /> 
+
+
+                        <Button
+                            title="Submit"
+                            color="maroon"
+                            onPress={props.handleSubmit}
+                        />
                     </View>
                 )}
             </Formik>
@@ -28,3 +55,12 @@ export default function Form(){
     )
 }
 
+
+const styles = StyleSheet.create({
+    main__container:{
+        flex:1
+    },
+    input:{
+        flex:1
+    }
+})
