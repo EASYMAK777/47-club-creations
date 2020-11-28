@@ -5,7 +5,9 @@ function Form() {
     return (
 
         <View style={styles.main__container}>
-            <Text style={styles.text}
+            <Text style={styles.text}>
+                
+            </Text>
             
         </View>
     );
