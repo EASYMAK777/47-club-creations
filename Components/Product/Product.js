@@ -108,7 +108,7 @@ function Product() {
             {/* First Item */}
             <View style={styles.product__Info}>
                 <Image source={require('../img/47sweatshirt with hoodie pocket.png')} style={styles.product__image}/>
-                <Text style={styles.text}>47 Sweatshirt with Hoodie Pocket</Text>
+                <Text style={styles.text}>47 Sweatshirt w/ Hoodie Pocket</Text>
                 <Button
 
                     style={styles.button} 
@@ -177,11 +177,8 @@ container__Product:{
     backgroundColor:"black",
     marginTop:10,
     marginBottom:10,
-    marginLeft:700,
-    marginRight:700
-
-    
-       
+    marginLeft:900,
+    marginRight:900
 },
 
 product__Info:{
@@ -190,14 +187,17 @@ product__Info:{
   
 text: {
     color: "darkslateblue",
-    fontSize: 30,
+    fontSize: 20,
     backgroundColor:"white",
     margin:10,
     width:200,
+    height:40,
     textAlign:"center",
-    marginBottom:0,
-    fontFamily:"cursive",
-    marginTop:-10
+    marginBottom:-15,
+    marginTop:-10,
+    paddingBottom:-100,
+    paddingTop:-20
+    
 },
 
     

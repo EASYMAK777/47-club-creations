@@ -8,7 +8,7 @@ import {
   View
 } from "react-native";
 
-const App = () => {
+const Form = () => {
   const [modalVisible, setModalVisible] = useState(false);
   return (
     <View style={styles.centeredView}>
@@ -87,4 +87,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default App;
+export default Form;
