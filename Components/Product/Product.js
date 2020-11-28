@@ -177,8 +177,8 @@ container__Product:{
     backgroundColor:"black",
     marginTop:10,
     marginBottom:10,
-    marginLeft:800,
-    marginRight:800
+    marginLeft:700,
+    marginRight:700
 
     
        
