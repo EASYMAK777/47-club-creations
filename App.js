@@ -8,10 +8,13 @@ import Product from './Components/Product/Product';
 
 const App = () => {
   return (
-    <View style={styles.container}>
-      <Header title="47 Club Creations"/>
-      <Product/>
-    </View>
+    
+
+
+    // <View style={styles.container}>
+    //   <Header title="47 Club Creations"/>
+    //   <Product/>
+    // </View>
   );
 };
       
@@ -20,11 +23,11 @@ const App = () => {
 
 const styles= StyleSheet.create({
 
-  container:{
-    flex: 1,
-    paddingTop:60,
-    backgroundColor:"gray"
-  },
+  // container:{
+  //   flex: 1,
+  //   paddingTop:60,
+  //   backgroundColor:"gray"
+  // },
 
 });
 
