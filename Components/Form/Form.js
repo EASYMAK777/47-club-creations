@@ -8,7 +8,7 @@ export default function Form(){
             <Formik
                 initialValues={{ title:'', body:'', rating:'' }}
                 onSubmit={(values)=> {
-
+                    values.title
                 }}
             >
 
@@ -18,6 +18,8 @@ export default function Form(){
                             style={styles.form__container}
                             placeholder="Review Title"
                             onChangeText={props.handleChange("title")}
+                            value={props.values.title}
+                            
                         /> 
                     </View>
                 )}
