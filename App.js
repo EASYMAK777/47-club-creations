@@ -1,5 +1,6 @@
 import React from 'react'
 import { View, StyleSheet} from 'react-native';
+import { NativeRouter } from 'react-router-native';
 import Header from './Components/Header/Header';
 import Product from './Components/Product/Product';
 
@@ -8,13 +9,16 @@ import Product from './Components/Product/Product';
 
 const App = () => {
   return (
-    
+    <NativeRouter>
+      <Route exact path="/" component={Home}/>
+
+    </NativeRouter>
 
 
-    <View style={styles.container}>
-      <Header title="47 Club Creations"/>
-      <Product/>
-    </View>
+    // <View style={styles.container}>
+    //   <Header title="47 Club Creations"/>
+    //   <Product/>
+    // </View>
   );
 };
       
@@ -23,11 +27,11 @@ const App = () => {
 
 const styles= StyleSheet.create({
 
-  container:{
-    flex: 1,
-    paddingTop:60,
-    backgroundColor:"gray"
-  },
+  // container:{
+  //   flex: 1,
+  //   paddingTop:60,
+  //   backgroundColor:"gray"
+  // },
 
 });
 
