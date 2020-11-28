@@ -2,6 +2,7 @@ import React from 'react'
 import { View, Text, StyleSheet, Image, Button, Alert, ScrollView } from 'react-native';
 import Header from "../Header/Header"
 
+
       
 function Product() {
   return (
@@ -23,6 +24,8 @@ function Product() {
                     onPress={() => Alert.alert("Button Pressed")}
                     title="Press here to inquire about this product"
                 />
+
+                
             </View>
         </View>
 
@@ -174,8 +177,8 @@ container__Product:{
     backgroundColor:"black",
     marginTop:10,
     marginBottom:10,
-    marginLeft:50,
-    marginRight:50
+    marginLeft:800,
+    marginRight:800
 
     
        

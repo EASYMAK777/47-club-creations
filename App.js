@@ -2,6 +2,7 @@ import React from 'react'
 import { View, StyleSheet} from 'react-native';
 import Header from './Components/Header/Header';
 import Product from './Components/Product/Product';
+import Modal from './Components/Modal/Modal';
 
 
 
