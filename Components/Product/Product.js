@@ -3,6 +3,9 @@ import { View, Text, StyleSheet, Image, Button, Alert, ScrollView } from 'react-
 import Header from "../Header/Header"
 
 
+
+
+
       
 function Product() {
   return (
@@ -24,6 +27,9 @@ function Product() {
                     onPress={() => Alert.alert("Button Pressed")}
                     title="Press here to inquire about this product"
                 />
+               
+
+
 
                 
             </View>
@@ -177,8 +183,7 @@ container__Product:{
     backgroundColor:"black",
     marginTop:10,
     marginBottom:10,
-    marginLeft:900,
-    marginRight:900
+    
 },
 
 product__Info:{
