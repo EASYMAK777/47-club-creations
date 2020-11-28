@@ -7,7 +7,13 @@ export default function Form(){
         <View style={styles.main__container}>
             <Formik
                 initialValues={{ title:'', body:'', rating:'' }}
-            ></Formik>
+                onSubmit={()=> {
+                    
+                }}
+            >
+
+
+            </Formik>
         </View>
     )
 }
