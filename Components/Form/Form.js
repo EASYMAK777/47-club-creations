@@ -14,8 +14,6 @@ export default function Form(){
                     // values.size
                     // values.color
                     // values.units
-                    // values.size
-                    // values.message
                 }}
             >
 
@@ -87,20 +85,6 @@ const styles = StyleSheet.create({
     main__container:{
         flex:1
     },
-    // inputMessage:{
-    //     flex:1,
-    //     justifyContent:"center",
-    //     alignItems:"center",
-    //     flexDirection:"column",
-    //     backgroundColor:"white",
-    //     marginTop:10,
-    //     marginBottom:10,
-    //     marginLeft: 900,
-    //     marginRight:900,
-        
-
-
-    // },
     input:{
         flex:1,
         justifyContent:"center",
