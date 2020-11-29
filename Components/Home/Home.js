@@ -10,9 +10,7 @@ function Home() {
                 title="Welcome to 47 Club Creations" 
                 styles={style.home__header}
             />
-            <Text styles={style.home__text}>
-                Welcome to 47 Club Creations
-            </Text>
+            
         
         </View>
     )
@@ -20,7 +18,10 @@ function Home() {
 
 const styles = StyleSheet.create({
     home__text:{
-        flex:1
+        flex:1,
+        color:"#fff",
+        fontSize:30,
+        textAlign:"center"
     },
     home__header:{
         flex:1
