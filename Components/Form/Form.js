@@ -45,12 +45,14 @@ export default function Form(){
 
                         <Button
                             title="Submit"
+                            style={styles.Button}
                             color="darkslateblue"
                             onPress={props.handleSubmit}
                         />
 
                         <Button
                             title="Return to product page"
+                            style={styles.button}
                             color="darkslateblue"
                             onPress={props.return}
                         />
@@ -67,6 +69,32 @@ const styles = StyleSheet.create({
         flex:1
     },
     input:{
-        flex:1
+        flex:1,
+        justifyContent:"center",
+        alignItems:"center",
+        flexDirection:"column",
+        backgroundColor:"white",
+        marginTop:10,
+        marginBottom:10,
+        marginLeft: 900,
+        marginRight:900,
+        padding:20
+
+    },
+    button:{
+        flex:2,
+        justifyContent:"center",
+        alignItems:"center",
+        flexDirection:"column",
+        backgroundColor:"black",
+        marginTop:10,
+        marginBottom:10,
+        marginLeft:200,
+        marginRight:200,
+
     }
+    
+
+
+
 })
