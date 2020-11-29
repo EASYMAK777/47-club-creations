@@ -10,9 +10,12 @@ export default function Form(){
                 onSubmit={(values)=> {
 
                     console.log(values);
-                    // values.title
-                    // values.body
-                    // values.rating
+                    // values.productName
+                    // values.size
+                    // values.color
+                    // values.units
+                    // values.size
+                    // values.message
                 }}
             >
 
@@ -22,7 +25,7 @@ export default function Form(){
                             style={styles.input}
                             placeholder="Product Name"
                             onChangeText={props.handleChange("product name")}
-                            value={props.values.title}
+                            value={props.values.productName}
 
                         /> 
 
@@ -30,7 +33,7 @@ export default function Form(){
                             style={styles.input}
                             placeholder="Size"
                             onChangeText={props.handleChange("Size")}
-                            value={props.values.body}
+                            value={props.values.size}
                             
                         /> 
 
@@ -38,7 +41,23 @@ export default function Form(){
                             style={styles.input}
                             placeholder="Color"
                             onChangeText={props.handleChange("color")}
-                            value={props.values.rating}
+                            value={props.values.color}
+                            
+                        /> 
+
+                        <TextInput 
+                            style={styles.input}
+                            placeholder="Number of Units"
+                            onChangeText={props.handleChange("number of units")}
+                            value={props.values.units}
+                            
+                        /> 
+
+                        <TextInput 
+                            style={styles.input}
+                            placeholder="Enter Message Here"
+                            onChangeText={props.handleChange("message")}
+                            value={props.values.message}
                             
                         /> 
 
@@ -68,6 +87,20 @@ const styles = StyleSheet.create({
     main__container:{
         flex:1
     },
+    // inputMessage:{
+    //     flex:1,
+    //     justifyContent:"center",
+    //     alignItems:"center",
+    //     flexDirection:"column",
+    //     backgroundColor:"white",
+    //     marginTop:10,
+    //     marginBottom:10,
+    //     marginLeft: 900,
+    //     marginRight:900,
+        
+
+
+    // },
     input:{
         flex:1,
         justifyContent:"center",
