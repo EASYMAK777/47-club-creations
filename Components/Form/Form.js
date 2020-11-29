@@ -14,7 +14,7 @@ export default function Form(){
         />
 
                 <Formik
-                    initialValues={{ title:'', body:'', rating:'' }}
+                    initialValues={{ productName:'', size:'', color:'', units:'',message:'' }}
                     onSubmit={(values)=> {
 
                         console.log(values);
