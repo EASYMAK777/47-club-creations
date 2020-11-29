@@ -13,7 +13,7 @@ export default function Form(){
             title="Home of the latest fashion"
         />
 
-                {/* <Formik
+                <Formik
                     initialValues={{ title:'', body:'', rating:'' }}
                     onSubmit={(values)=> {
 
@@ -83,7 +83,7 @@ export default function Form(){
                             />
                         </View>
                     )}
-                </Formik> */}
+                </Formik>
             
         </ScrollView>
     )
@@ -101,19 +101,19 @@ const styles = StyleSheet.create({
     
 
 
-    // input:{
-    //     flex:1,
-    //     justifyContent:"center",
-    //     alignItems:"center",
-    //     flexDirection:"column",
-    //     backgroundColor:"white",
-    //     marginTop:10,
-    //     marginBottom:10,
-    //     marginLeft: 900,
-    //     marginRight:900,
-    //     padding:20
+    input:{
+        flex:1,
+        justifyContent:"center",
+        alignItems:"center",
+        flexDirection:"column",
+        backgroundColor:"white",
+        marginTop:10,
+        marginBottom:10,
+        marginLeft: 900,
+        marginRight:900,
+        padding:20
 
-    // },
+    },
     // button:{
     //     flex:2,
     //     justifyContent:"center",
@@ -128,6 +128,6 @@ const styles = StyleSheet.create({
     // }
     
 
-
-
 })
+
+
