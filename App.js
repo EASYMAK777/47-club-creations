@@ -7,7 +7,9 @@ import Home from './Components/Header/Header';
 
 function App(){
   return(
-
+    <NavigationContainer>
+      
+    </NavigationContainer>
   );
 };
 
