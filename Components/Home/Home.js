@@ -3,7 +3,7 @@ import { View, } from 'react-native'
 import Header from '../Header/Header'
 
 
-const Home = () => {
+const Home = ({ navigation }) => {
     return (
         <View>
             <Header
@@ -12,7 +12,9 @@ const Home = () => {
             />
             
             
-            <Button title="Press to continue" onPress={() =>this.props.navigation.navigate('Products')} />
+            <Button title="Check our latest merchandise"
+            onPress={()=> navigation.navigate("Products")}
+            />
         
         </View>
     )

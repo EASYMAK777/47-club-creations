@@ -20,24 +20,24 @@ export default function Form(){
                     <View>
                         <TextInput 
                             style={styles.input}
-                            placeholder="Review Title"
-                            onChangeText={props.handleChange("title")}
+                            placeholder="Product Name"
+                            onChangeText={props.handleChange("product name")}
                             value={props.values.title}
 
                         /> 
 
                         <TextInput 
                             style={styles.input}
-                            placeholder="Review Body"
-                            onChangeText={props.handleChange("body")}
+                            placeholder="Size"
+                            onChangeText={props.handleChange("Size")}
                             value={props.values.body}
                             
                         /> 
 
                         <TextInput 
                             style={styles.input}
-                            placeholder="Review Rating"
-                            onChangeText={props.handleChange("rating")}
+                            placeholder="Color"
+                            onChangeText={props.handleChange("color")}
                             value={props.values.rating}
                             
                         /> 
@@ -45,7 +45,7 @@ export default function Form(){
 
                         <Button
                             title="Submit"
-                            color="maroon"
+                            color="darkslateblue"
                             onPress={props.handleSubmit}
                         />
                     </View>
