@@ -5,8 +5,14 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Header from './Components/Header/Header';
 import Home from './Components/Header/Header';
 
+function App(){
+  return(
+
+  );
+};
 
 
+export default App;
 
 
 
