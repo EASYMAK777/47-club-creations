@@ -11,10 +11,10 @@ const AppStack = createStackNavigator();
 function App(){
   return(
     <NavigationContainer>
-      <AuthStack.Navigator>
+      <AppStack.Navigator>
         <AppStack.Screen name="Home" component={Home} />
         <AppStack.Screen name="Products" component={Product}/>
-      </AuthStack.Navigator>
+      </AppStack.Navigator>
     </NavigationContainer>
   );
 };
