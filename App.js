@@ -23,9 +23,56 @@ function App(){
 };
 
 
+
+
 export default App;
 
 
+
+
+
+
+
+
+
+
+
+
+// import React from 'react'
+// import { View, StyleSheet, Text} from 'react-native';
+// import Header from './Components/Header/Header';
+// import Product from './Components/Product/Product';
+
+
+
+
+// const App = () => {
+//   return (
+    
+
+//     <View style={styles.container}>
+//       <Header title="47 Club Creations"/>
+//       <Product/>
+//     </View>
+
+//     );
+//   };
+  
+
+      
+
+// const styles= StyleSheet.create({
+
+//   container:{
+//     flex: 1,
+//     paddingTop:60,
+//     backgroundColor:"gray"
+//   },
+
+// });
+
+
+// export default App;
 
 
 
