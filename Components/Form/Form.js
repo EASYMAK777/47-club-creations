@@ -1,82 +1,90 @@
 import React from 'react';
-import { ScrollView, Text, StyleSheet, Button, TextInput, } from 'react-native';
+import { ScrollView, Text, StyleSheet, Button, TextInput, View } from 'react-native';
 import { Formik } from 'formik';
 import { back } from 'react-native/Libraries/Animated/src/Easing';
+
+import Header from '../Header/Header';
 
 export default function Form(){
     return(
         <ScrollView style={styles.main__container}>
-            {/* <Formik
-                initialValues={{ title:'', body:'', rating:'' }}
-                onSubmit={(values)=> {
+            <Header
+            style={styles.subHeader} 
+            title="Home of the latest fashion"
+        />
 
-                    console.log(values);
-                    // values.productName
-                    // values.size
-                    // values.color
-                    // values.units
-                }}
-            >
+                {/* <Formik
+                    initialValues={{ title:'', body:'', rating:'' }}
+                    onSubmit={(values)=> {
 
-                {(props)=> (
-                    <View>
-                        <TextInput 
-                            style={styles.input}
-                            placeholder="Product Name"
-                            onChangeText={props.handleChange("product name")}
-                            value={props.values.productName}
+                        console.log(values);
+                        // values.productName
+                        // values.size
+                        // values.color
+                        // values.units
+                    }}
+                >
 
-                        /> 
+                    {(props)=> (
+                        <View>
+                            <TextInput 
+                                style={styles.input}
+                                placeholder="Product Name"
+                                onChangeText={props.handleChange("product name")}
+                                value={props.values.productName}
 
-                        <TextInput 
-                            style={styles.input}
-                            placeholder="Size"
-                            onChangeText={props.handleChange("Size")}
-                            value={props.values.size}
-                            
-                        /> 
+                            /> 
 
-                        <TextInput 
-                            style={styles.input}
-                            placeholder="Color"
-                            onChangeText={props.handleChange("color")}
-                            value={props.values.color}
-                            
-                        /> 
+                            <TextInput 
+                                style={styles.input}
+                                placeholder="Size"
+                                onChangeText={props.handleChange("Size")}
+                                value={props.values.size}
+                                
+                            /> 
 
-                        <TextInput 
-                            style={styles.input}
-                            placeholder="Number of Units"
-                            onChangeText={props.handleChange("number of units")}
-                            value={props.values.units}
-                            
-                        /> 
+                            <TextInput 
+                                style={styles.input}
+                                placeholder="Color"
+                                onChangeText={props.handleChange("color")}
+                                value={props.values.color}
+                                
+                            /> 
 
-                        <TextInput 
-                            style={styles.input}
-                            placeholder="Enter Message Here"
-                            onChangeText={props.handleChange("message")}
-                            value={props.values.message}
-                            
-                        /> 
+                            <TextInput 
+                                style={styles.input}
+                                placeholder="Number of Units"
+                                onChangeText={props.handleChange("number of units")}
+                                value={props.values.units}
+                                
+                            /> 
+
+                            <TextInput 
+                                style={styles.input}
+                                placeholder="Enter Message Here"
+                                onChangeText={props.handleChange("message")}
+                                value={props.values.message}
+                                
+                            /> 
 
 
-                        <Button
-                            title="Submit"
-                            style={styles.Button}
-                            color="darkslateblue"
-                            onPress={props.handleSubmit}
-                        />
+                            <Button
+                                title="Submit"
+                                style={styles.Button}
+                                color="darkslateblue"
+                                onPress={props.handleSubmit}
+                            />
 
-                        <Button
-                            title="Return to product page"
-                            style={styles.button}
-                            color="darkslateblue"
-                            onPress={props.returnHome}
-                        />
-                    </View>
-                )}
-            </Formik> */}
+                            <Button
+                                title="Return to product page"
+                                style={styles.button}
+                                color="darkslateblue"
+                                onPress={props.returnHome}
+                            />
+                        </View>
+                    )}
+                </Formik> */}
+            
         </ScrollView>
     )
 }
@@ -89,6 +97,8 @@ const styles = StyleSheet.create({
         marginLeft:20,
         marginRight:20,
     },
+
+    
 
 
     // input:{
