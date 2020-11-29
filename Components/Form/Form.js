@@ -7,7 +7,7 @@ import Header from '../Header/Header';
 
 export default function Form(){
     return(
-        <ScrollView style={styles.main__container}>
+        <ScrollView contentContainerStyle={styles.main__container}>
             <Header
             style={styles.subHeader} 
             title="Home of the latest fashion"
@@ -96,6 +96,8 @@ const styles = StyleSheet.create({
         backgroundColor:"red",
         marginLeft:20,
         marginRight:20,
+        justifyContent:"center",
+        alignItems:"center",
     },
 
     
@@ -114,18 +116,18 @@ const styles = StyleSheet.create({
         padding:20
 
     },
-    // button:{
-    //     flex:2,
-    //     justifyContent:"center",
-    //     alignItems:"center",
-    //     flexDirection:"column",
-    //     backgroundColor:"black",
-    //     marginTop:10,
-    //     marginBottom:10,
-    //     marginLeft:200,
-    //     marginRight:200,
+    button:{
+        flex:2,
+        justifyContent:"center",
+        alignItems:"center",
+        flexDirection:"column",
+        backgroundColor:"black",
+        marginTop:10,
+        marginBottom:10,
+        marginLeft:200,
+        marginRight:200,
 
-    // }
+    }
     
 
 })
