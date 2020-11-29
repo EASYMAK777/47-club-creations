@@ -14,8 +14,8 @@ function App(){
   return(
     <NavigationContainer>
       <AppStack.Navigator>
-        <AppStack.Screen name="Home" component={Home} />
-        {/* <AppStack.Screen name="Products" component={Product}/> */}
+        {/* <AppStack.Screen name="Home" component={Home} /> */}
+        <AppStack.Screen name="Products" component={Product} options={{title:"47 Club Creations"}} />
         {/* <AppStack.Screen name ="Form" component={Form}/> */}
       </AppStack.Navigator>
     </NavigationContainer>

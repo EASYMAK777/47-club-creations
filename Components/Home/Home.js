@@ -7,7 +7,6 @@ function Home() {
     return (
         <View>
             <Header
-
                 title="Welcome to 47 Club Creations" 
                 styles={style.home__header}
             />
@@ -28,7 +27,10 @@ const styles = StyleSheet.create({
         textAlign:"center"
     },
     home__header:{
-        flex:1
+        flex:1,
+        color:"#fff",
+        fontSize:30,
+        textAlign:"center"
     }
     
 })
