@@ -1,11 +1,12 @@
 import React from 'react';
-import { View, Text, StyleSheet, Button, TextInput, } from 'react-native';
+import { ScrollView, Text, StyleSheet, Button, TextInput, } from 'react-native';
 import { Formik } from 'formik';
+import { back } from 'react-native/Libraries/Animated/src/Easing';
 
 export default function Form(){
     return(
-        <View style={styles.main__container}>
-            <Formik
+        <ScrollView style={styles.main__container}>
+            {/* <Formik
                 initialValues={{ title:'', body:'', rating:'' }}
                 onSubmit={(values)=> {
 
@@ -71,45 +72,50 @@ export default function Form(){
                             title="Return to product page"
                             style={styles.button}
                             color="darkslateblue"
-                            onPress={props.return}
+                            onPress={props.returnHome}
                         />
                     </View>
                 )}
-            </Formik>
-        </View>
+            </Formik> */}
+        </ScrollView>
     )
 }
 
 
 const styles = StyleSheet.create({
     main__container:{
-        flex:1
-    },
-    input:{
         flex:1,
-        justifyContent:"center",
-        alignItems:"center",
-        flexDirection:"column",
-        backgroundColor:"white",
-        marginTop:10,
-        marginBottom:10,
-        marginLeft: 900,
-        marginRight:900,
-        padding:20
-
+        backgroundColor:"red",
+        marginLeft:20,
+        marginRight:20,
     },
-    button:{
-        flex:2,
-        justifyContent:"center",
-        alignItems:"center",
-        flexDirection:"column",
-        backgroundColor:"black",
-        marginTop:10,
-        marginBottom:10,
-        marginLeft:200,
-        marginRight:200,
 
-    }
+
+    // input:{
+    //     flex:1,
+    //     justifyContent:"center",
+    //     alignItems:"center",
+    //     flexDirection:"column",
+    //     backgroundColor:"white",
+    //     marginTop:10,
+    //     marginBottom:10,
+    //     marginLeft: 900,
+    //     marginRight:900,
+    //     padding:20
+
+    // },
+    // button:{
+    //     flex:2,
+    //     justifyContent:"center",
+    //     alignItems:"center",
+    //     flexDirection:"column",
+    //     backgroundColor:"black",
+    //     marginTop:10,
+    //     marginBottom:10,
+    //     marginLeft:200,
+    //     marginRight:200,
+
+    // }
     
 
 
