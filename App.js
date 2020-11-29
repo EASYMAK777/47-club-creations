@@ -2,9 +2,11 @@ import React from 'react';
 import { NavigationContainer, } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
-// import Header from './Components/Header/Header';
+import Header from './Components/Header/Header';
 import Home from './Components/Header/Header';
 import Product from './Components/Product/Product';
+import Form from './Components/Form/Form';
+
 
 const AppStack = createStackNavigator(); 
 
@@ -13,7 +15,8 @@ function App(){
     <NavigationContainer>
       <AppStack.Navigator>
         <AppStack.Screen name="Home" component={Home} />
-        <AppStack.Screen name="Products" component={Product}/>
+        {/* <AppStack.Screen name="Products" component={Product}/> */}
+        {/* <AppStack.Screen name ="Form" component={Form}/> */}
       </AppStack.Navigator>
     </NavigationContainer>
   );

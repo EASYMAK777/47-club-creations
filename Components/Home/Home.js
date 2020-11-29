@@ -6,7 +6,11 @@ import Header from '../Header/Header'
 function Home() {
     return (
         <View>
-            <Header/>
+            <Header
+                title="Welcome to 47 Club Creactions!!"
+                    
+            />
+            
             <Text >
                 Welcome to 47 Club Creations
             </Text>
