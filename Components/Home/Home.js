@@ -7,11 +7,18 @@ function Home() {
     return (
         <View>
             <Header
+
+                title="Welcome to 47 Club Creations" 
+                styles={style.home__header}
+            />
+            <Text styles={style.home__text}>
+
                 title="Welcome to 47 Club Creactions!!"
                     
             />
             
             <Text >
+
                 Welcome to 47 Club Creations
             </Text>
             <Button title="Press to continue" onPress={() =>5} />
@@ -19,6 +26,17 @@ function Home() {
         </View>
     )
 }
+
+
+const styles = StyleSheet.create({
+    home__text:{
+        flex:1
+    },
+    home__header:{
+        flex:1
+    }
+    
+})
 
 
 
