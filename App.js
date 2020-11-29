@@ -12,11 +12,14 @@ import Home from './Components/Home/Home';
 const App = () => {
   return (
     
-    
-    <View style={styles.container}>
-      {/* <Header title="47 Club Creations"/>
-      <Product/> */}
-    </View>
+    <NativeRouter>
+
+      <View style={styles.container}>
+        {/* <Header title="47 Club Creations"/>
+        <Product/> */}
+      </View>
+
+    </NativeRouter>
   );
 };
       
