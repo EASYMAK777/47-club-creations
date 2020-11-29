@@ -3,7 +3,7 @@ import { View, } from 'react-native'
 import Header from '../Header/Header'
 
 
-function Home() {
+const Home = () => {
     return (
         <View>
             <Header
@@ -12,7 +12,7 @@ function Home() {
             />
             
             
-            <Button title="Press to continue" onPress={() =>5} />
+            <Button title="Press to continue" onPress={() =>this.props.navigation.navigate('Products')} />
         
         </View>
     )
@@ -40,4 +40,28 @@ const styles = StyleSheet.create({
 
 
 export default Home
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
