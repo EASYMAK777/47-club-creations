@@ -48,6 +48,12 @@ export default function Form(){
                             color="darkslateblue"
                             onPress={props.handleSubmit}
                         />
+
+                        <Button
+                            title="Return to product page"
+                            color="darkslateblue"
+                            onPress={props.return}
+                        />
                     </View>
                 )}
             </Formik>
