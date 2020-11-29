@@ -1,24 +1,21 @@
 import React from 'react'
 import { View, StyleSheet} from 'react-native';
+import { NativeRouter, Switch, Route } from "react-router-native";
 
 import Header from './Components/Header/Header';
 import Product from './Components/Product/Product';
+import Home from './Components/Home/Home';
 
 
 
 
 const App = () => {
   return (
-    // <NativeRouter>
-    //   <Route exact path="/" component={Home}/>
-    //   <Route path="/products" component={Product}/>
-
-    // </NativeRouter>
-
-
+    
+    
     <View style={styles.container}>
-      <Header title="47 Club Creations"/>
-      <Product/>
+      {/* <Header title="47 Club Creations"/>
+      <Product/> */}
     </View>
   );
 };
