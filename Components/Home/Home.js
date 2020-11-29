@@ -10,7 +10,7 @@ function Home() {
             <Text styles={style.home__text}>
                 Welcome to 47 Club Creations
             </Text>
-            <Button title="Press to continue" />
+            <Button title="Press to continue" onPress={() =>5} />
         
         </View>
     )
