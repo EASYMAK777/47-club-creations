@@ -1,10 +1,7 @@
 import React from 'react'
 import { View, StyleSheet} from 'react-native';
-import { NativeRouter, Switch, Route } from "react-router-native";
-
 import Header from './Components/Header/Header';
 import Product from './Components/Product/Product';
-import Home from './Components/Home/Home';
 
 
 
@@ -12,14 +9,12 @@ import Home from './Components/Home/Home';
 const App = () => {
   return (
     
-    <NativeRouter>
 
-      <View style={styles.container}>
-        {/* <Header title="47 Club Creations"/>
-        <Product/> */}
-      </View>
 
-    </NativeRouter>
+    <View style={styles.container}>
+      <Header title="47 Club Creations"/>
+      <Product/>
+    </View>
   );
 };
       
@@ -38,8 +33,6 @@ const styles= StyleSheet.create({
 
 
 export default App;
-
-
 
 
 
