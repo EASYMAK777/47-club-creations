@@ -1,38 +1,53 @@
-import React from 'react'
-import { View, StyleSheet} from 'react-native';
-import Header from './Components/Header/Header';
-import Product from './Components/Product/Product';
+import React from 'react';
+import { NavigationContainer, } from '@react-navigation/native';
 
 
 
 
-const App = () => {
-  return (
+
+
+
+
+
+
+
+
+
+// import React from 'react'
+// import { View, StyleSheet, Text} from 'react-native';
+// import Header from './Components/Header/Header';
+// import Product from './Components/Product/Product';
+
+
+
+
+// const App = () => {
+//   return (
     
 
+//     <View style={styles.container}>
+//       <Header title="47 Club Creations"/>
+//       <Product/>
+//     </View>
 
-    <View style={styles.container}>
-      <Header title="47 Club Creations"/>
-      <Product/>
-    </View>
-  );
-};
+//     );
+//   };
+  
+
       
 
-      
+// const styles= StyleSheet.create({
 
-const styles= StyleSheet.create({
+//   container:{
+//     flex: 1,
+//     paddingTop:60,
+//     backgroundColor:"gray"
+//   },
 
-  container:{
-    flex: 1,
-    paddingTop:60,
-    backgroundColor:"gray"
-  },
-
-});
+// });
 
 
-export default App;
+// export default App;
 
 
 
