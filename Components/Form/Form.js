@@ -26,7 +26,7 @@ export default function Form(){
                 >
 
                     {(props)=> (
-                        <View>
+                        <View style={styles.input__container}>
                             <TextInput 
                                 style={styles.input}
                                 placeholder="Product Name"
@@ -104,6 +104,12 @@ const styles = StyleSheet.create({
         alignItems:"center",
     },
 
+    input__container:{
+        flex:1,
+        
+
+    },
+
     
 
 
@@ -128,6 +134,8 @@ const styles = StyleSheet.create({
     button__view:{
         flex:3,
         width:200,
+        justifyContent:"center",
+        
     }
 
     
