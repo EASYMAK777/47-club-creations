@@ -3,17 +3,18 @@ import { View, } from 'react-native'
 import Header from '../Header/Header'
 
 
-function Home() {
+const Home = ({ navigation }) => {
     return (
         <View>
             <Header
-
                 title="Welcome to 47 Club Creations" 
                 styles={style.home__header}
             />
             
             
-            <Button title="Press to continue" onPress={() =>5} />
+            <Button title="Check our latest merchandise"
+            onPress={()=> navigation.navigate("Products")}
+            />
         
         </View>
     )
@@ -28,7 +29,10 @@ const styles = StyleSheet.create({
         textAlign:"center"
     },
     home__header:{
-        flex:1
+        flex:1,
+        color:"#fff",
+        fontSize:30,
+        textAlign:"center"
     }
     
 })
@@ -38,4 +42,28 @@ const styles = StyleSheet.create({
 
 
 export default Home
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
