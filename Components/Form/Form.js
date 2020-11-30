@@ -8,15 +8,11 @@ import Header from '../Header/Header';
 export default function Form(){
     return(
         <ScrollView contentContainerStyle={styles.main__container}>
-            <Header
-            style={styles.subHeader} 
-            title="Home of the latest fashion"
-        />
 
                 <Formik
                     initialValues={{ productName:'', size:'', color:'', units:'',message:'' }}
                     onSubmit={(values)=> {
-
+                        
                         console.log(values);
                         // values.productName
                         // values.size
@@ -27,6 +23,10 @@ export default function Form(){
 
                     {(props)=> (
                         <View style={styles.input__container}>
+                                <Header
+                                style={styles.subHeader} 
+                                title="Home of the latest fashion"
+                            />
                             <TextInput 
                                 style={styles.input}
                                 placeholder="Product Name"
@@ -97,7 +97,7 @@ export default function Form(){
 const styles = StyleSheet.create({
     main__container:{
         flex:1,
-        backgroundColor:"red",
+        backgroundColor:"black",
         marginLeft:30,
         marginRight:30,
         justifyContent:"center",
@@ -105,11 +105,20 @@ const styles = StyleSheet.create({
     },
 
     input__container:{
-        flex:1,
-        backgroundColor:"black",
+        flex:2,
+        
         alignItems:"center",
+        marginRight:100,
+        marginLeft:100,
+        justifyContent:"center",
+        
         
 
+    },
+
+    subHeader:{
+        flex:1,
+        
     },
 
     
@@ -121,7 +130,8 @@ const styles = StyleSheet.create({
         alignItems:"center",
         flexDirection:"column",
         backgroundColor:"white",
-        marginTop:10,
+        width:300,
+        height:50,
         marginBottom:10,
         marginLeft: 900,
         marginRight:900,
@@ -130,11 +140,11 @@ const styles = StyleSheet.create({
     },
     fitToText:{
        flexDirection:'row',
-       justifyContent:"space-between",
+       
 
     },
     button__view:{
-        flex:3,
+        flex:1,
         width:200,
         justifyContent:"center",
         
