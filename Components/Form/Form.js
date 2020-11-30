@@ -67,20 +67,24 @@ export default function Form(){
                                 
                             /> 
 
+                          <View style={styles.button__view}>
+                                <Button
+                                    title="Submit"
+                                    style={styles.fitToText}
+                                    color="darkslateblue"
+                                    onPress={props.handleSubmit}
+                                />
+                          </View>
 
-                            <Button
-                                title="Submit"
-                                style={styles.Button}
-                                color="darkslateblue"
-                                onPress={props.handleSubmit}
-                            />
+                          <View style={styles.button__view}>
+                                <Button
+                                    title="Return to product page"
+                                    style={styles.fitToText}
+                                    color="darkslateblue"
+                                    onPress={props.returnHome}
+                                />
 
-                            <Button
-                                title="Return to product page"
-                                style={styles.button}
-                                color="darkslateblue"
-                                onPress={props.returnHome}
-                            />
+                          </View>
                         </View>
                     )}
                 </Formik>
@@ -94,8 +98,8 @@ const styles = StyleSheet.create({
     main__container:{
         flex:1,
         backgroundColor:"red",
-        marginLeft:20,
-        marginRight:20,
+        marginLeft:30,
+        marginRight:30,
         justifyContent:"center",
         alignItems:"center",
     },
@@ -116,18 +120,16 @@ const styles = StyleSheet.create({
         padding:20
 
     },
-    button:{
-        flex:2,
-        justifyContent:"center",
-        alignItems:"center",
-        flexDirection:"column",
-        backgroundColor:"black",
-        marginTop:10,
-        marginBottom:10,
-        marginLeft:200,
-        marginRight:200,
+    fitToText:{
+       flexDirection:'row',
+       justifyContent:"space-between",
 
+    },
+    button__view:{
+        flex:3,
+        width:200,
     }
+
     
 
 })
