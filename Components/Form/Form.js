@@ -9,8 +9,12 @@ export default function Form(){
     return(
         <ScrollView contentContainerStyle={styles.main__container}>
 
-                <Formik
-                    initialValues={{ productName:'', size:'', color:'', units:'',message:'' }}
+                <Header
+                style={styles.header} 
+                title="Home of the latest fashion"
+                />
+                <Formik style={styles.formik__container}
+                    initialValues={{ product:'', size:'', color:'', units:'',message:'' }}
                     onSubmit={(values)=> {
                         
                         console.log(values);
@@ -23,27 +27,24 @@ export default function Form(){
 
                     {(props)=> (
                         <View style={styles.input__container}>
-                                <Header
-                                style={styles.subHeader} 
-                                title="Home of the latest fashion"
-                            />
-                            <TextInput 
+                                
+                                <TextInput 
                                 style={styles.input}
-                                placeholder="Product Name"
-                                onChangeText={props.handleChange("product name")}
-                                value={props.values.productName}
-
+                                placeholder="Enter Product Name"
+                                onChangeText={props.handleChange("product")}
+                                value={props.values.product}
+                                
                             /> 
 
-                            <TextInput 
+<TextInput 
                                 style={styles.input}
                                 placeholder="Size"
-                                onChangeText={props.handleChange("Size")}
+                                onChangeText={props.handleChange("size")}
                                 value={props.values.size}
                                 
                             /> 
 
-                            <TextInput 
+<TextInput 
                                 style={styles.input}
                                 placeholder="Color"
                                 onChangeText={props.handleChange("color")}
@@ -51,10 +52,10 @@ export default function Form(){
                                 
                             /> 
 
-                            <TextInput 
+<TextInput 
                                 style={styles.input}
-                                placeholder="Number of Units"
-                                onChangeText={props.handleChange("number of units")}
+                                placeholder="Number of units"
+                                onChangeText={props.handleChange("units")}
                                 value={props.values.units}
                                 
                             /> 
@@ -66,7 +67,7 @@ export default function Form(){
                                 value={props.values.message}
                                 
                             /> 
-
+                        <View style={styles.submit__button}>
                           <View style={styles.button__view}>
                                 <Button
                                     title="Submit"
@@ -75,6 +76,10 @@ export default function Form(){
                                     onPress={props.handleSubmit}
                                 />
                           </View>
+                        </View>
+                        
+                        
+                        <View style={styles.returnHome__button}>
 
                           <View style={styles.button__view}>
                                 <Button
@@ -85,6 +90,13 @@ export default function Form(){
                                 />
 
                           </View>
+
+                        </View>
+
+
+
+
+
                         </View>
                     )}
                 </Formik>
@@ -104,20 +116,29 @@ const styles = StyleSheet.create({
         alignItems:"center",
     },
 
+    formik__container:{
+        flex:1,
+        paddingBottom:20,
+    },  
+
     input__container:{
         flex:2,
-        
+        marginTop:-30,
+        marginBottom:30,
         alignItems:"center",
         marginRight:100,
         marginLeft:100,
         justifyContent:"center",
+        padding:40,
         
         
 
     },
 
-    subHeader:{
+    header:{
         flex:1,
+        justifyContent:"center",
+        alignItems:"center",
         
     },
 
@@ -140,15 +161,35 @@ const styles = StyleSheet.create({
     },
     fitToText:{
        flexDirection:'row',
+       paddingRight:20,
+       borderColor:"red"
        
 
     },
     button__view:{
-        flex:1,
+        flex:3,
         width:200,
         justifyContent:"center",
+        margin:10,
         
+    
+    },
+
+    submit__button:{
+        flex:3,
+        marginBottom:-10,
+    },
+
+    returnHome__button:{
+        flex:3,
+        paddingBottom:0,
+        
+        
+
+
     }
+
+
 
     
 
