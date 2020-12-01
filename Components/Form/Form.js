@@ -8,11 +8,11 @@ import Header from '../Header/Header';
 export default function Form(){
     return(
         <ScrollView contentContainerStyle={styles.main__container}>
+
                 <Header
-                style={styles.subHeader} 
+                style={styles.header} 
                 title="Home of the latest fashion"
                 />
-
                 <Formik style={styles.formik__container}
                     initialValues={{ product:'', size:'', color:'', units:'',message:'' }}
                     onSubmit={(values)=> {
@@ -135,8 +135,10 @@ const styles = StyleSheet.create({
 
     },
 
-    subHeader:{
+    header:{
         flex:1,
+        justifyContent:"center",
+        alignItems:"center",
         
     },
 
