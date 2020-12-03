@@ -14,9 +14,9 @@ function App(){
   return(
     <NavigationContainer>
       <AppStack.Navigator>
-        {/* <AppStack.Screen name="Welcome to 47 Club Creations" component={Home}/> */}
+        <AppStack.Screen name="47 Club Creations" component={Home}/>
         {/* <AppStack.Screen name="Products" component={Product}/> */}
-        <AppStack.Screen name ="Inquiry Form" component={Form}/>
+        {/* <AppStack.Screen name ="Inquiry Form" component={Form}/> */}
       </AppStack.Navigator>
     </NavigationContainer>
   );
