@@ -3,9 +3,10 @@ import { View, } from 'react-native'
 import Header from '../Header/Header'
 
 
+
 const Home = ({ navigation }) => {
     return (
-        <View>
+        <View style={{ flex:1, alignItems:"center", justifyContent:"center" }}>
             <Header
                 title="Welcome to 47 Club Creations" 
                 styles={style.home__header}
@@ -24,13 +25,13 @@ const Home = ({ navigation }) => {
 const styles = StyleSheet.create({
     home__text:{
         flex:1,
-        color:"#fff",
+        color:"red",
         fontSize:30,
         textAlign:"center"
     },
     home__header:{
         flex:1,
-        color:"#fff",
+        color:"black",
         fontSize:30,
         textAlign:"center"
     }
