@@ -7,12 +7,12 @@ import Header from "../Header/Header"
 
 
       
-function Product() {
+const Product = ({ navigation }) => {
   return (
     <ScrollView style={styles.container__Main}>
         <Header
             style={styles.subHeader} 
-            title="Home of the latest fashion"
+            title="Inquire about our products here"
         />
 
         <View style={styles.container__Product}>
@@ -24,7 +24,7 @@ function Product() {
 
                     style={styles.button} 
                     color="darkslateblue"
-                    onPress={() => Alert.alert("Button Pressed")}
+                    onPress={() =>navigation.navigate("Form")}
                     title="Press here to inquire about this product"
                 />
                
@@ -89,7 +89,7 @@ function Product() {
 
                     style={styles.button} 
                     color="darkslateblue"
-                    onPress={() => Alert.alert("Button Pressed")}
+                    onPress={() => Navigation.navigate("Form")}
                     title="Press here to inquire about this product"
                 />
             </View>

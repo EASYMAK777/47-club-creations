@@ -13,16 +13,21 @@ function Header({title}) {
 const styles = StyleSheet.create({
     header: {
         height:60,
-        padding:15,
         backgroundColor:'darkslateblue',
         borderWidth:1,
         width:400,
         justifyContent:"center",
+        marginTop:20,
+        marginBottom:30,
+        padding:-20,
+
+        
+
         
     },
     text:{
         color:"#fff",
-        fontSize:30,
+        fontSize:20,
         textAlign:"center"
     }
 });

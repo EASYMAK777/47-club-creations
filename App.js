@@ -1,11 +1,30 @@
 import React from 'react';
 import { NavigationContainer, } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import { View, Text, Button, StyleSheet } from 'react-native'
 
 import Header from './Components/Header/Header';
-import Home from './Components/Header/Header';
+// import Home from './Components/Header/Header';
 import Product from './Components/Product/Product';
 import Form from './Components/Form/Form';
+
+
+const Home = ({ navigation }) => {
+  return (
+      <View style={styles.main__container}>
+          <Header
+              title="Welcome to 47 Club Creations" 
+              style = {styles.header}
+          />
+
+          
+          <Button title="Check our latest merchandise"
+          onPress={()=> navigation.navigate("Products")}
+          />
+      
+      </View>
+  )
+}
 
 
 const AppStack = createStackNavigator(); 
@@ -15,14 +34,23 @@ function App(){
     <NavigationContainer>
       <AppStack.Navigator>
         <AppStack.Screen name="47 Club Creations" component={Home}/>
-        {/* <AppStack.Screen name="Products" component={Product}/> */}
-        {/* <AppStack.Screen name ="Inquiry Form" component={Form}/> */}
+        <AppStack.Screen name="Products" component={Product}/>
+        <AppStack.Screen name ="Inquiry Form" component={Form}/>
       </AppStack.Navigator>
     </NavigationContainer>
   );
 };
 
+const styles = StyleSheet.create({
 
+  main__container:{
+    flex:1,
+    alignItems:"center",
+    flexDirection:"column",
+  },
+
+  
+})
 
 
 export default App;
