@@ -24,7 +24,7 @@ const Product = ({ navigation }) => {
 
                     style={styles.button} 
                     color="darkslateblue"
-                    onPress={() =>navigation.navigate("Form")}
+                    onPress={() =>navigation.navigate("Inquiry Form")}
                     title="Press here to inquire about this product"
                 />
             </View>
@@ -44,7 +44,7 @@ const Product = ({ navigation }) => {
 
                     style={styles.button} 
                     color="darkslateblue"
-                    onPress={() => Alert.alert("Button Pressed")}
+                    onPress={() =>navigation.navigate("Inquiry Form")}
                     title="Press here to inquire about this product"
                 />
             </View>
@@ -59,7 +59,7 @@ const Product = ({ navigation }) => {
 
                     style={styles.button} 
                     color="darkslateblue"
-                    onPress={() => Alert.alert("Button Pressed")}
+                    onPress={() =>navigation.navigate("Inquiry Form")}
                     title="Press here to inquire about this product"
                 />
             </View>
@@ -74,7 +74,7 @@ const Product = ({ navigation }) => {
 
                     style={styles.button} 
                     color="darkslateblue"
-                    onPress={() => Alert.alert("Button Pressed")}
+                    onPress={() =>navigation.navigate("Inquiry Form")}
                     title="Press here to inquire about this product"
                 />
             </View>
@@ -89,7 +89,7 @@ const Product = ({ navigation }) => {
 
                     style={styles.button} 
                     color="darkslateblue"
-                    onPress={() => Navigation.navigate("Form")}
+                    onPress={() =>navigation.navigate("Inquiry Form")}
                     title="Press here to inquire about this product"
                 />
             </View>
@@ -104,7 +104,7 @@ const Product = ({ navigation }) => {
 
                     style={styles.button} 
                     color="darkslateblue"
-                    onPress={() => Alert.alert("Button Pressed")}
+                    onPress={() =>navigation.navigate("Inquiry Form")}
                     title="Press here to inquire about this product"
                 />
             </View>
@@ -119,7 +119,7 @@ const Product = ({ navigation }) => {
 
                     style={styles.button} 
                     color="darkslateblue"
-                    onPress={() => Alert.alert("Button Pressed")}
+                    onPress={() =>navigation.navigate("Inquiry Form")}
                     title="Press here to inquire about this product"
                 />
             </View>
@@ -134,7 +134,7 @@ const Product = ({ navigation }) => {
 
                     style={styles.button} 
                     color="darkslateblue"
-                    onPress={() => Alert.alert("Button Pressed")}
+                    onPress={() =>navigation.navigate("Inquiry Form")}
                     title="Press here to inquire about this product"
                 />
             </View>
