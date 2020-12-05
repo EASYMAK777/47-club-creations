@@ -9,7 +9,7 @@ import Header from "../Header/Header"
       
 const Product = ({ navigation }) => {
   return (
-    <ScrollView style={styles.container__Main}>
+    <ScrollView contentContainerStyle={styles.container__Main}>
         <Header
             style={styles.subHeader} 
             title="Inquire about our products here"
@@ -27,13 +27,13 @@ const Product = ({ navigation }) => {
                     onPress={() =>navigation.navigate("Form")}
                     title="Press here to inquire about this product"
                 />
+            </View>
+        </View>
                
 
 
 
                 
-            </View>
-        </View>
 
         <View style={styles.container__Product}>
             {/* First Item */}
@@ -167,6 +167,8 @@ const styles= StyleSheet.create({
 
 container__Main: {
     flex:1,
+    alignItems:"center",
+   
     
     
 },
