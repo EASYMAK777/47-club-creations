@@ -50,7 +50,7 @@ const Product = ({ navigation }) => {
             </View>
         </View>
 
-        {/* <View style={styles.container__Product}>
+        <View style={styles.container__Product}>
            
             <View style={styles.product__Info}>
                 <Image source={require('../img/47SexLounge.png')} style={styles.product__image}/>
@@ -63,12 +63,12 @@ const Product = ({ navigation }) => {
                     title="Press here to inquire about this product"
                 />
             </View>
-        </View> */}
+        </View>
 
-        {/* <View style={styles.container__Product}>
+        <View style={styles.container__Product}>
          
             <View style={styles.product__Info}>
-                <Image source={require('../img/47soccer suit.png')} style={styles.product__image}/>
+                <Image source={require('../img/47soccer-suit.png')} style={styles.product__image}/>
                 <Text style={styles.text}>47 Soccer Suit</Text>
                 <Button
 
@@ -78,9 +78,9 @@ const Product = ({ navigation }) => {
                     title="Press here to inquire about this product"
                 />
             </View>
-        </View> */}
+        </View>
 
-        {/* <View style={styles.container__Product}>
+        <View style={styles.container__Product}>
           
             <View style={styles.product__Info}>
                 <Image source={require('../img/47surfhoodies.png')} style={styles.product__image}/>
@@ -93,9 +93,9 @@ const Product = ({ navigation }) => {
                     title="Press here to inquire about this product"
                 />
             </View>
-        </View> */}
+        </View>
 
-        {/* <View style={styles.container__Product}>
+        <View style={styles.container__Product}>
            
             <View style={styles.product__Info}>
                 <Image source={require('../img/47sweatpants.png')} style={styles.product__image}/>
@@ -108,12 +108,12 @@ const Product = ({ navigation }) => {
                     title="Press here to inquire about this product"
                 />
             </View>
-        </View> */}
+        </View>
 
-        {/* <View style={styles.container__Product}>
+        <View style={styles.container__Product}>
            
             <View style={styles.product__Info}>
-                <Image source={require('../img/47sweatshirt with hoodie pocket.png')} style={styles.product__image}/>
+                <Image source={require('../img/47sweatshirt-hoodie.png')} style={styles.product__image}/>
                 <Text style={styles.text}>47 Sweatshirt w/ Hoodie Pocket</Text>
                 <Button
 
@@ -123,12 +123,12 @@ const Product = ({ navigation }) => {
                     title="Press here to inquire about this product"
                 />
             </View>
-        </View> */}
+        </View>
 
-        {/* <View style={styles.container__Product}>
+        <View style={styles.container__Product}>
            
             <View style={styles.product__Info}>
-                <Image source={require('../img/champion shorts.png')} style={styles.product__image}/>
+                <Image source={require('../img/champion-shorts.png')} style={styles.product__image}/>
                 <Text style={styles.text}>47 Champion Shorts</Text>
                 <Button
 
@@ -138,7 +138,7 @@ const Product = ({ navigation }) => {
                     title="Press here to inquire about this product"
                 />
             </View>
-        </View> */}
+        </View>
  
 
 
