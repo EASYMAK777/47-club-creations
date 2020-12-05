@@ -6,7 +6,7 @@ import { View, Text, Button, StyleSheet } from 'react-native'
 import Header from './Components/Header/Header';
 // import Home from './Components/Header/Header';
 import Product from './Components/Product/Product';
-// import Form from './Components/Form/Form';
+import Form from './Components/Form/Form';
 
 
 const Home = ({ navigation }) => {
@@ -35,7 +35,7 @@ function App(){
       <AppStack.Navigator>
         <AppStack.Screen name="47 Club Creations" component={Home}/>
         <AppStack.Screen name="Products" component={Product}/>
-        {/* <AppStack.Screen name ="Inquiry Form" component={Form}/> */}
+        <AppStack.Screen name ="Inquiry Form" component={Form}/>
       </AppStack.Navigator>
     </NavigationContainer>
   );
@@ -46,12 +46,10 @@ const styles = StyleSheet.create({
   main__container:{
     flex:1,
     alignItems:"center",
+    flexDirection:"column",
   },
 
-  header:{
-    flex:1,
   
-  }
 })
 
 

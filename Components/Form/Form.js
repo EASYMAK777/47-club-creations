@@ -5,7 +5,7 @@ import { back } from 'react-native/Libraries/Animated/src/Easing';
 
 import Header from '../Header/Header';
 
-export default function Form(){
+const Form = ({ navigation }) => {
     return(
         <ScrollView contentContainerStyle={styles.main__container}>
 
@@ -86,7 +86,7 @@ export default function Form(){
                                     title="Return to product page"
                                     style={styles.fitToText}
                                     color="darkslateblue"
-                                    onPress={props.returnHome}
+                                    onPress={()=> navigation.navigate("Products")}
                                 />
 
                           </View>
@@ -194,5 +194,7 @@ const styles = StyleSheet.create({
     
 
 })
+
+export default Form;
 
 
