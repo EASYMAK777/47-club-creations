@@ -14,7 +14,7 @@ const Form = ({ navigation }) => {
                 title="Use this form to inquire about our products"
                 />
                 <Formik style={styles.formik__container}
-                    initialValues={{ product:'', size:'', color:'', units:'',message:'' }}
+                    initialValues={{ product:'', size:'', color:'', units:'',message:'',emailAddress:'' }}
                     onSubmit={(values)=> {
                         
                         console.log(values);
@@ -67,6 +67,15 @@ const Form = ({ navigation }) => {
                                 value={props.values.message}
                                 
                             /> 
+
+                            <TextInput 
+                                style={styles.input}
+                                placeholder="Enter Your Email Address"
+                                onChangeText={props.handleChange("emailAddress")}
+                                value={props.values.emailAddress}
+                                
+                            /> 
+
                         <View style={styles.submit__button}>
                           <View style={styles.button__view}>
                                 <Button
