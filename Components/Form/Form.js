@@ -11,7 +11,7 @@ const Form = ({ navigation }) => {
 
                 <Header
                 style={styles.header} 
-                title="Home of the latest fashion"
+                title="Use this form to inquire about our products"
                 />
                 <Formik style={styles.formik__container}
                     initialValues={{ product:'', size:'', color:'', units:'',message:'' }}
@@ -36,7 +36,7 @@ const Form = ({ navigation }) => {
                                 
                             /> 
 
-<TextInput 
+                            <TextInput 
                                 style={styles.input}
                                 placeholder="Size"
                                 onChangeText={props.handleChange("size")}
@@ -44,7 +44,7 @@ const Form = ({ navigation }) => {
                                 
                             /> 
 
-<TextInput 
+                            <TextInput 
                                 style={styles.input}
                                 placeholder="Color"
                                 onChangeText={props.handleChange("color")}
@@ -52,7 +52,7 @@ const Form = ({ navigation }) => {
                                 
                             /> 
 
-<TextInput 
+                            <TextInput 
                                 style={styles.input}
                                 placeholder="Number of units"
                                 onChangeText={props.handleChange("units")}
